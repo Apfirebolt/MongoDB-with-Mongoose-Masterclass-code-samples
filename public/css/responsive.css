@@ -1,0 +1,188 @@
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .navbar-light .navbar-nav{
+        background: transparent;
+    }
+
+    .dropdown i{
+		display: none;
+	}
+
+    #contact .col-md-6 form {
+        width: 75%;
+    }
+    footer form button {
+        margin: 0rem auto;
+    }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1450px) {
+    #work .work-item .images img {
+        height: 350px;
+        width: 600px;
+        margin: 0.75rem auto;
+    } 
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .navbar-light .navbar-nav{
+        background: transparent;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: #FFF;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: #424242;
+    }
+    #contact form {
+        width: 80%;
+    }
+    footer form button {
+        margin: 0rem auto;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .navbar-dark .navbar-nav .nav-link {
+        color: #424242;
+    }
+    .navbar-nav .nav-item {
+        text-align: center;
+        background: #000080;
+        padding: 1rem;
+    }
+    .navbar-light .navbar-toggler-icon-bar{
+        background: transparent;
+        height: auto;
+        color: #fff;
+    }
+    #work .work-item .images img {
+        height: 350px;
+        width: 500px;
+        margin: 0.75rem auto;
+    }
+    footer .footer-links ul li {
+        font-size: 1rem;
+    }
+    #contact form {
+        width: 85%;
+        margin: 0.5rem;
+    }
+    .search-container label {
+        text-align: center;
+        font-size: 1.2rem;
+        margin: 0.25rem;
+    }
+    .search-container {
+        padding: 1rem;
+    }    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    footer .footer-links ul li {
+        font-size: 1rem;
+    }
+    .navbar-nav .nav-item {
+        text-align: center;
+        background: #000080;
+        padding: 1rem;
+    }
+    .navbar-light .navbar-toggler-icon-bar{
+        background: transparent;
+        height: auto;
+        color: #fff;
+    }
+    #work .work-item .images img {
+        height: 350px;
+        width: 500px;
+        margin: 0.75rem auto;
+    } 
+    #contact form {
+        width: 80%;
+        margin: 0.5rem;
+    }
+    .search-container label {
+        text-align: center;
+        font-size: 1.2rem;
+        margin: 0.25rem;
+    }
+    .search-container button {
+        margin: 0.5rem auto;
+    }
+    .search-container {
+        padding: 1rem;
+    }  
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .navbar-dark .navbar-nav .nav-link {
+        color: #ddd;
+        background-color: #000080;
+    }
+
+    .navbar-nav .nav-item {
+        padding: 1rem;
+    }
+
+    .navbar-nav .nav-item {
+        text-align: center;
+        background: #000080;
+        padding: 1rem;
+    }
+
+    .navbar-light .navbar-toggler-icon-bar{
+        background: transparent;
+        height: auto;
+        color: #fff;
+     }
+
+     .navbar-nav .nav-item {
+        text-align: center;
+        background: #424242;
+        padding: 0.25rem 0;
+        color: #ddd;
+    }
+    .section-heading {
+        margin: 0.25rem auto;
+    }
+
+    #contact form {
+        width: 100%;
+        margin: 0.5rem;
+    }
+    #work .work-item .images img {
+        height: 250px;
+        width: 350px;
+        margin: 0.75rem auto;
+    }
+    #team .carousel-item img {
+        height: 250px;
+        width: 350px;
+    }
+    .search-container label {
+        text-align: center;
+        font-size: 1.2rem;
+        margin: 0.25rem;
+    }
+    .search-container {
+        padding: 1rem;
+    }
+    footer .footer-links ul li {
+        font-size: 1rem;
+    }
+    footer form button {
+        margin: 1rem auto;
+    }
+}
+
+    
+

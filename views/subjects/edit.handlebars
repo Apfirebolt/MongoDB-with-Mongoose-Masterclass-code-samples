@@ -1,0 +1,24 @@
+<form action="/students/{{student._id}}/subjects/edit/{{subject._id}}" class="container my-3" method="post">
+    <p>
+        Add Subject Form
+    </p>
+    <select class="form-select form-control" value={{ subject.name }} aria-label="Default select example" name="name">
+        <option>Please Select Subject</option>
+        <option value="English">English</option>
+        <option value="Mathematic">Mathematics</option>
+        <option value="Physics">Physics</option>
+        <option value="Chemistry">Chemistry</option>
+        <option value="Biology">Biology</option>
+    </select>
+
+    <div class="form-group">
+        <label for="marks">Enter Marks</label>
+        <input type="number" value={{ subject.marks }} class="form-control" id="marks" name="marks" placeholder="Enter Marks">
+    </div>
+
+    <div class="container d-flex justify-content-center">
+        <button type="submit" class="btn btn-success">
+            Edit Subject
+        </button>
+    </div>
+</form>

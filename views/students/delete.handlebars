@@ -1,0 +1,13 @@
+<form action="/students/delete/{{student._id}}" class="container my-3 p-3" method="post">
+  <h2 class="text-center text-success">
+      DELETE STUDENT
+  </h2>  
+  <p>
+    Are you sure you want to delete student {{ student.firstName }} {{ student.lastName }} ?
+  </p>
+  <div class="container d-flex justify-content-center align-items-center">
+      <button class="btn btn-success">
+        Delete Student
+      </button>
+  </div>
+</form>

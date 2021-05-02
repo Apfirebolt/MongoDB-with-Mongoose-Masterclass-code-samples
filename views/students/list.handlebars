@@ -1,0 +1,40 @@
+<div class="container bg-white my-3">
+    <div class="d-flex justify-content-center">
+        <a href="/students/create" class="btn btn-success my-2 mx-auto">Add Student</a>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col" class="text-center">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each students}}
+            <tr>
+            <th scope="row">{{_id}}</th>
+            <td>{{ firstName }}</td>
+            <td>{{ lastName }}</td>
+            <td>
+                <div class="d-flex justify-content-center align-items-center">
+                    <a href="/students/{{_id}}" class="btn m-1 btn-warning">
+                        Details
+                    </a>
+                    <a href="/students/{{_id}}/subjects" class="btn m-1 btn-secondary">
+                        Add Subject
+                    </a>
+                    <a href="/students/delete/{{_id}}" class="btn m-1 btn-danger">
+                        Delete
+                    </a>
+                    <a href="/students/edit/{{_id}}" class="btn m-1 btn-info">
+                        Edit
+                    </a>
+                </div>
+            </td>
+            </tr>
+            {{/each}}  
+        </tbody>
+    </table>
+</div>

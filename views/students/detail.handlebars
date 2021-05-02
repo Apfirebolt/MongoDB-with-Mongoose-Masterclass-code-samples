@@ -1,0 +1,45 @@
+<div class="container my-3">
+    <h2 class="text-center text-primary">
+        Student Detail Page
+    </h2>
+    <p>
+        {{ student.firstName }}
+    </p>
+    {{#if student.subjects.length}}
+        <div class="container bg-white my-3">
+        <table class="table">
+            <thead>
+                <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Marks</th>
+                <th scope="col" class="text-center">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each student.subjects}}
+                <tr>
+                <th scope="row">{{_id}}</th>
+                <td>{{ name }}</td>
+                <td>{{ marks }}</td>
+                <td>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a href="/students/{{../student._id}}/subjects/delete/{{_id}}" class="btn m-1 btn-danger">
+                            Delete
+                        </a>
+                        <a href="/students/{{../student._id}}/subjects/edit/{{_id}}" class="btn m-1 btn-info">
+                            Edit
+                        </a>
+                    </div>
+                </td>
+                </tr>
+                {{/each}}  
+            </tbody>
+        </table>
+    </div>
+    {{else}}
+        <h4 class="text-center text-warning">
+            No Subjects added.
+        </h4>
+    {{/if}}
+</div>
